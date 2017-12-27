@@ -1,0 +1,1554 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "mixin.scss";
+@import "menus.scss";
+@import "categorias.scss";
+@import "footer.scss";
+@import "webform.scss";
+@import "responsive.scss";
+
+body{
+	@include reset-body;
+	background: $fondo;
+}
+h1, h2, h3, h4, p, a, span, li, div{
+	font-family: $tipo;
+}
+a{
+	text-decoration: none;
+}
+strong{
+	font-weight: bolder;
+}
+p, span, table {
+	font-size: 0.9em;
+    line-height: 1.2em;
+}
+
+.front{
+	#content-wrapper{ display: none }
+}
+
+.titulares{
+	padding: 30px 0;
+	h1{
+		color: $azul;
+		font-size: 2.3em;
+		text-transform: uppercase;
+	}
+}
+
+.subtitularesAzul{
+	color: $azul;
+	text-align: center;
+	font-size: 2.3em;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+
+// block contactenos
+#block-block-33{
+
+}
+.boton{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 18px;
+	background: $azul;
+	color: $blanco;
+	@include border-radius(4px);
+	@include transition(300ms);
+	&:hover{
+		background: $verde;
+	}
+}
+
+// fondos con opacidad
+.fondoVerdeOpacidad{
+	background: rgba(151,193,60,0.8);
+}
+.fondoNaranjaOpacidad{
+	background: rgba(250,173,63,0.8);
+}
+.fondoAzulOpacidad{
+	background: rgba(0,93,172,0.8);
+}
+.fondoNegroOpacidad{
+	background: rgba(0,0,0,0.8);
+}
+
+// fondos color plano
+.fondoVerde{
+	background: $verde;
+}
+.fondoNaranja{
+	background: $naranja;
+}
+.fondoAzul{
+	background: $azul;
+}
+.fotosAnchoTotal{
+	img, figure img{
+		width: 100%;
+		height: auto;
+	}
+}
+.textoSobreFoto{
+	color: $blanco;
+}
+
+.region-top{
+	background: $azul;
+}
+
+//wrapper top
+.topWrapper {
+	padding: 20px 0;
+	background: $azul;
+	width: 100%;
+
+	#top-inside{
+		.region{
+			@include flexo3;
+			@include justify-content(space-around);
+		}
+	}
+	
+	#block-search-form, 
+	#block-block-16, 
+	#block-block-1, 
+	#block-menu-menu-padres-estudiantes, 
+	#block-menu-menu-usuarios-del-sitio-ingresar{
+
+	}
+}
+
+//buscador
+#block-search-form{
+	#edit-submit--2{
+		background: url('/sites/default/files/lupa.png') no-repeat;
+		font-size: 0.8em;
+		color: $gris;
+	}
+}
+
+//menu mobil
+#block-block-16{
+
+}
+
+//Redes sociales
+#block-block-1{
+
+}
+
+// menu de padres y estudiantes
+#block-menu-menu-padres-estudiantes{
+
+}
+
+// ingresar / salir
+#block-menu-menu-usuarios-del-sitio-ingresar{
+
+}
+
+
+.region-navigation{
+	@include display-flex(flex);
+	@include justify-content(space-around);
+	padding: 10px;
+	#block-block-3{
+		width: 15%;
+		.logo{
+			img{
+				width: 142px;
+			}
+		}
+	}
+	#block-menu-menu-top-menu{
+		width: 85%;
+	}
+}
+
+.wrapLineaColores{
+	width: 100%;
+	.lineadegrade{
+		float: left;
+		width: 33.33%;
+		height: 10px;
+	}
+	.lineadegrade01{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb00e+0,e94d1a+100 */
+background: #feb00e; /* Old browsers */
+background: -moz-linear-gradient(left,  #feb00e 0%, #e94d1a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #feb00e 0%,#e94d1a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #feb00e 0%,#e94d1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb00e', endColorstr='#e94d1a',GradientType=1 ); /* IE6-9 */
+
+	}
+	.lineadegrade02{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3d941+0,edeb40+13,739040+100 */
+background: #d3d941; /* Old browsers */
+background: -moz-linear-gradient(left,  #d3d941 0%, #edeb40 13%, #739040 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #d3d941 0%,#edeb40 13%,#739040 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #d3d941 0%,#edeb40 13%,#739040 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d941', endColorstr='#739040',GradientType=1 ); /* IE6-9 */
+
+	}
+}
+	.lineadegrade03{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#55afe1+0,62caef+13,233f6e+100 */
+background: #55afe1; /* Old browsers */
+background: -moz-linear-gradient(left,  #55afe1 0%, #62caef 13%, #233f6e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #55afe1 0%,#62caef 13%,#233f6e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #55afe1 0%,#62caef 13%,#233f6e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55afe1', endColorstr='#233f6e',GradientType=1 ); /* IE6-9 */
+
+	}
+
+
+// logo
+
+// Fron page cuadros
+
+.ofertaEducativaWrapper{
+	padding: 20px;
+	text-align: center;
+	margin-top: -25px;
+	background: $blanco;
+	position: relative;
+	z-index: 9;
+	@each $num in 01, 02, 03 {
+		.cuadro-#{$num}{
+			
+		}
+	}
+	.cuadro{
+		display: inline-block;
+		width: 30%;
+		height: 166px;
+		@include transition(300ms);
+		.icono{
+			padding: 20px;
+		}
+		.tituloOferta{
+			text-transform: uppercase;
+			font-size: 2em;
+			margin-top: 10px;
+			a{
+				color: $blanco;
+			}
+		}
+		a{
+			text-decoration: none;
+		}
+		img{
+			
+		}
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+	.cuadro:nth-of-type(1){
+	 	background: $naranja;
+	}
+	.cuadro:nth-of-type(2){
+	 	background: $verde;
+	}
+	.cuadro:nth-of-type(3){
+	 	background: $azul;
+	}
+}
+
+// Slide Show - fix
+
+#block-views-slide-principal-block{
+	h2{ display: none; }
+}
+
+.views_slideshow_cycle_main {
+  width: 100%;
+  float: left;
+	.views-slideshow-cycle-main-frame {
+	  width: 100% !important;
+	  height: auto;
+	}
+	.views-slideshow-cycle-main-frame-row {
+	  width: 100% !important;
+	  height: auto;
+	}
+	.field-content {
+	  max-width: 100%;
+	  width: 100%;
+	}
+	.field-content img {
+	  max-width: 100%;
+	  width: 100%;
+	  height: auto;
+	  margin: 0;
+	  padding: 0;
+	}
+}
+
+// banner gigante
+
+.bannerGigante{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+	.wrapTextosBanner{ // este rótulo es genérico para las fotos grandes que llevan textos
+		position: absolute;
+		left: 50%;
+		top: 20%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		span, strong{
+			color: $blanco;
+			text-shadow: 2px 2px 5px $negro;
+			-webkit-text-shadow: 2px 2px 3px $negro;
+		}
+		span{
+			font-size: 2em;
+		}
+		strong{
+			text-transform: uppercase;
+			font-size: 4em;
+			font-style: bold;
+		}
+		a{
+			background: $azul;
+		    color: $blanco;
+			font-size: 13px;
+		    font-weight: 700;
+		    line-height: 19px;
+		    padding: 16px 28px;
+		    border-radius: 50px;
+		    text-decoration: none;
+		    outline: none;
+		    margin-top: 30px;
+		    @include transition(300ms);
+		    &:hover{
+		    	background: $verde;
+		    }
+		}
+	}
+
+
+
+// datos
+
+section.datos{
+	padding: 30px 0;
+	text-align: center;
+	display: inline-block;
+    width: 100%;
+
+	h2{
+		color: $azul;
+		font-size: 2.5em;
+		padding: 12px;
+	}
+	span{
+		text-transform: uppercase;
+		padding: 12px;
+		color: $negro;
+	}
+	p{
+		color: $grisOscuro;
+		font-size: 0.7em;
+		padding: 12px;
+	}
+
+}
+
+// OWL CARRUSELL
+
+#owl-demo {
+	.item{
+	  margin: 3px;
+	}
+}
+#owl-demo {
+	.item {
+		p{
+			position: absolute;
+			color: white;
+			background: rgba(52,136,191,0.8);
+			padding: 30px;
+			height: 100%;
+			top: 100%;
+			@include transition(500ms);
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		&:hover{
+			p{
+				top: 0%;
+			}
+		}
+	}
+}
+
+// LOGOS ALIANZAS
+#block-block-12{
+	background: $blanco;
+}
+.wraplogosAlianzas{
+	padding: 30px 0;
+	h3{
+		text-align: center;
+		text-transform: uppercase;
+		padding: 30px 0;
+		color: $gris;
+	}
+	.logoAlinzas{
+		@include display-flex;
+		@include justify-content(center);
+		@include align-items(center);
+		height: 150px;
+		img{
+			padding: 12px;
+			width: 150px;
+			height: auto!Important;
+			margin: 0 auto;
+		}	
+	}
+}
+
+
+// contenidos
+
+.node-type-noticias{
+	#page{
+		margin-top: 30px;
+	}
+}
+
+.page-title{
+	color: $azul;
+	font-size: 1.6em;
+	padding-bottom: 30px; 
+	text-transform: uppercase;
+	padding-top: 16px;
+}
+
+.field-type-text-with-summary{
+	p{
+		color: $grisOscuro;
+		font-size: 0.8em;
+		text-align: justify;
+		line-height: 18px;
+	}
+}
+
+.field-name-field-foto-enlaces{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+//contenido preescolar y primaria
+
+.taxonomy-wrapper{
+	.view-content{
+		@include flexo3;
+		@include flex-wrap(wrap);
+		.wrapperitemtaxonomy{
+		    width: 250px;
+		    height: 166px;
+		    margin: 12px;
+		    text-align: center;
+		    padding: 30px;
+		    border-radius: 3px;
+		    background: $grisClaro;
+		    @include transition(300ms);
+    		img{
+				margin-top:10px;
+    		}
+    		.views-field-title{
+    			span{
+    				a{
+    					font-size: 0.9em;
+
+    				}
+    			}
+    		}
+		}
+	}
+}
+
+.page-taxonomy-term-1{
+	.wrapperitemtaxonomy{
+		&:hover{
+			background: $verde;
+		}
+	}
+}
+.page-taxonomy-term-2, .page-taxonomy-term-13{
+	.wrapperitemtaxonomy{
+		&:hover{
+			background: $azul;
+			.field-content{
+				a{
+					color: $blanco;
+				}
+			}
+		}
+	}
+}
+.page-taxonomy-term-3{
+	.wrapperitemtaxonomy{
+		&:hover{
+			background: $naranja;
+		}
+	}
+}
+
+// Directorio de profesores
+.page-node-111 {
+	.view-directorio-primaria, .view-directorio-secundaria, .view-directorio-preescolar {
+		.views-row {
+			float: left;
+			padding: 10px 30px 10px 15px;
+			text-align: center;
+			width: 159px;
+			height: 282px;
+			/*background-color: #ccc;*/
+		}
+	}
+}
+
+// Cuadros - preescolar
+
+	 .contenedor_cuadros_preescolar{
+	 	width:100%; 
+	 	height:100%;
+	 
+		 .cuadro_interno_preescolar{
+	 		width:20%;
+	 		float:left;
+	 		color: #fff;
+		 	text-align:center;
+		 	margin: 40px 20px 20px 20px;
+		 	display: inline-block;
+		 	position: relative;
+
+					 .p1_preescolar{
+						background:orange;
+						padding: 10px 10px 10px 10px;
+					 }
+
+					 .p2_preescolar{
+						background:gray;
+						padding: 5px 10px 5px 10px;
+					 }
+
+					 .p3_preescolar{
+						background:tan;
+						padding: 5px 10px 5px 10px;
+						color: gray;
+					 }
+				}
+			}	
+
+//Cuadros primaria
+
+	.contenedor_cuadros_primaria{
+		 text-align: center;
+		 .itemHorario{
+		 	 width:35%;
+		 	 display: inline-block;
+		 	 min-width: 250px;
+		 	 vertical-align: top;
+		 	 p{
+		 	 	color:$blanco;
+		 	 }
+			.p1_primaria{
+		 		  background:green; 
+		 		  padding: 10px 10px 10px 10px;
+			}
+			.p2_primaria{
+				background:gray;
+				padding: 20px 20px 20px 20px;
+			}
+			.p3_primaria{
+				background:gray; 
+			    padding: 10px 10px 10px 10px; 
+			}
+		 }
+	}		
+
+// Galería
+
+.gallery{
+	@include flexo2;
+	@include flex-wrap(wrap);
+	a{
+		width: 23%;
+		text-align: center;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+// TEMARIOS TAREAS  PRACTICAS
+
+.wrapperDescargables{
+	text-align: center;
+	h2{
+		width: 50%;
+		display: inline-block;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 20px;
+		@include border-radius(4px, 4px);
+		background: $azul;
+		max-width: 300px;
+		padding: 20px;
+		color: $blanco;
+		font-size: 2em;
+		cursor: pointer;
+		@include transition(300ms);
+		&:hover{
+			background: $rojo;
+		}
+	}
+	.files_primaria, .files_secundaria {
+		@include flexo2;
+		@include flex-wrap(wrap);
+		background: $naranja;
+		.wrapperItem {
+			display: none;
+			padding: 20px;
+			@include border-radius(2px, 2px);
+			background: $naranja2;
+			text-align: center;
+			width: 30%;
+			margin: 6px;
+			text-align: center;
+			h3{
+				color: $blanco;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				text-align: center;
+				background: $verde;
+				border: solid 6px $blanco;
+				margin: 20px auto;
+				line-height: 60px;
+    			font-size: 2em;
+			}
+			a{
+				color: $blanco;
+				padding: 8px 14px;
+			}
+			&:hover{
+				h3{
+					background: $verde2;
+				}
+			}
+		}
+	}
+}
+
+// Seccion - ABC
+
+section.abc{
+	article{
+		position: relative;
+		padding: 40px 0;
+		.subtitularesAzul{
+			text-align: center;
+		}
+		.textoSobreFoto{
+			position: absolute;
+			z-index: 2;
+			padding: 40px 0;
+		}
+	}
+	article:nth-child(1){
+		.subtitularesAzul{
+		    padding: 0 0;
+		    text-align: left;
+		}
+	}
+	article:nth-child(2){
+		.textoSobreFoto{
+			top: 19%;
+		    width: 50%;
+		    left: 35%;
+		    padding: 40px;
+		}
+	}
+	article:nth-child(3){
+		.fondoNaranja{
+			padding: 30px 0;
+			text-align: center;
+			p{
+				color: $blanco;
+			}
+			div{
+				font-size: 1.3em;
+				display: inline-block;
+				color: $blanco;
+			}
+		}
+	}
+	article:nth-child(4){
+		.textoSobreFoto{
+			top: 19%;
+		    width: 23%;
+		    left: 56%;
+		    padding: 40px;
+		}
+		figure, p{
+			vertical-align: middle;
+			display: inline-block;
+		}
+		figure{
+			padding: 0 16px;
+			img{
+				max-width: 50px;
+				height: auto; 
+			}
+		}
+	}
+	article:nth-child(5){
+		.wrapperGM{
+			iframe{
+				display: block;
+				margin: 0 auto;
+				width: 90%;
+			}
+		}
+	}
+
+	article:nth-child(6), article:nth-child(7), 
+	article:nth-child(8), article:nth-child(9), 
+	{
+		.textoSobreFoto{
+			top: 25%;
+		    width: 50%;
+		    left: 15%;
+		    padding: 40px;
+		}
+	}
+	article:nth-child(10){
+		.textoSobreFoto{
+			top: 25%;
+		    width: 30%;
+		    left: 56%;
+		    padding: 40px;
+		}
+	}
+}
+
+// Seccion - Trayectoria
+
+section.trayectoria{
+	.subtitularesAzul{
+		padding-top: 30px;
+		}
+		article{
+			padding: 30px 0;
+			display: inline-block;
+			figure{
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	.wrapFundadoras{
+		text-align: center;
+		figure{
+			width: 20%;
+			display: inline-block;
+		}
+	}
+}
+
+// Seccion - Oracion
+
+section.oracion{
+	padding: 30px 0;
+	.wraperValor{
+		
+	}
+	figure{
+		text-align: center;
+	}
+}
+
+section.misionvision{
+	position: relative;
+	.textoSobreFoto{
+	    position: absolute;
+	    background: yellow;
+	    padding: 30px;
+	    width: 40%;
+	    left: 30%;
+	    top: 45%;
+	    text-align: center;
+	    color: black;
+	    font-size: 1.4em;
+	    line-height: 1.3em;
+	}
+	article{
+	padding: 30px;
+		figure{
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.wrapperValores{
+		@include flexo2;
+		align-items: stretch;
+		.wraperValor{
+			width:29%;
+			margin: 0 5px;
+			article{
+				p{
+					color: $blanco;
+				}
+			}
+		}
+	}
+}
+
+// Principios de Calidad
+
+section.princiosDeCalidad{
+	position: relative;
+	.textoSobreFoto{
+		width: 100%;
+		top: 35%;
+		text-align: center;
+		@include text-shadow(rgba($negro, 0.2) 1px 1px 0, rgba($negro, 0.2) 2px 2px 0, rgba($negro, 0.2) 3px 3px 0);
+		position: absolute;
+		font-size: 2.5em;
+	}
+
+	figure{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.wrapperPrincipiosItems{
+		margin-top: 30px;
+		@include flexo2;
+		@include flex-wrap(wrap);
+		@include align-items(stretch);
+		.itemPrincipios{
+			width: 30%;
+			min-width: 280px;
+			padding: 24px;
+			margin: 12px;
+			.numero, p{
+				color: $blanco;
+			}
+			.numero{
+				font-size: 3em;
+				text-align: center;
+				padding-bottom: 16px;
+			}
+			p{
+				
+			}
+		}
+	}
+}
+
+// // Información de Matrícula
+
+.infoMatricula{
+	position: relative;
+	.textoSobreFoto{
+		position: absolute;
+		padding: 40px;
+		width: 50%;
+		top: 25%;
+		left: 50%;
+		font-size: 1.5em;
+		@include transform(translateX(-50%));
+	}
+	.wrapperContMatri {
+		margin-top: 40px;
+		article{
+			clear:both;
+		}
+	}
+	.divRedondo {
+		@include border-radius(50%);
+	}
+	.wrapDibus {
+		div, img{
+			display: inline-block;
+			vertical-align: top;
+		}
+		text-align: center;
+	}
+	.iconText {
+		@include flexo3;
+		@include justify-content(flex-start);
+		padding: 5px 0;
+		img{
+			@include fullWidth;
+			max-width: 50px;
+		}
+	}
+	.container{
+		figure{
+			@include wyh(100%);
+		}
+		article{
+			p{
+				padding: 20px 0;
+			}
+		}
+	}
+	article.wrapBotonesInfo{
+		margin-bottom: 30px;
+		.wrapBotonesLinks{
+			@include flexo2;
+			a{
+				@include wyh(200px);
+				@include border-radius(100px);
+				background: $naranja;
+				text-align: center;
+				text-decoration:none;
+				text-transform: uppercase;
+				padding-top: 75px;
+    			font-size: 1.2em;
+				color: $blanco;
+				@include transition(300ms);
+				&:hover{
+					background:$rojo;
+				}
+			}
+		}
+	}
+}
+
+article.wrapBotonesInfo{
+	.wrapBotonesLinks{
+		@include flexo2;
+		@include flex-wrap(wrap);
+		a{
+			@include wyh(200px);
+			min-width: 200px;
+			@include border-radius(100px);
+			margin: 0 12px;
+			background: $naranja;
+		}
+	}
+}
+
+
+// //	PRIMARIA
+
+section.primaria{
+	padding: 40px 0;
+	article{
+		p{
+		 text-align: justify;
+		}
+	}
+	article{
+		ul.items{
+			@include flexo2;
+			@include flex-wrap(wrap);
+			margin-top: 30px;
+			li{
+				width: 30%;
+				min-width: 290px;
+				margin: 0 10px 20px 10px;
+				figure{
+					text-align: center;
+					margin-bottom: 14px;
+					img{
+						@include fullWidth;
+						max-width: 190px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// //	PREESCOLAR
+
+section.preescolar{
+	margin-top: 40px;
+	.wrapItemsPrescolar{
+		ul{
+			@include flexo2;
+			@include flex-wrap(wrap);
+			@include align-items(stretch);
+			li{
+				width: 30%;
+				margin: 0 12px 20px 12px;
+				figure{
+					text-align: center;
+					img{
+						max-width: 186px;
+						@include wyh(100%);
+						margin-bottom: 12px;
+					}
+				}
+				p{
+					text-align: justify;
+					padding: 0 8px;
+				}
+			}
+		}
+	}
+}
+
+// //	OFERTA EDUCATIVA  //
+
+.node-type-oferta-educativa{
+	#main-content{
+		padding: 30px 0;
+		.field-name-field-foto-oferta-educativa{
+			.field-items{
+				.field-item{
+					img{
+						@include wyh(100%);
+					}
+				}
+			}
+		}
+	}
+}
+
+// //	PERFIL DEL GRADUADO //
+
+section.perfilGraduado {
+	margin-top: 40px;
+	article.titPerfilGrad{
+		background: $naranja;
+		font-size: 1.2em;
+		padding: 20px 30px;
+		color: $blanco;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	article{
+		padding: 14px 0;
+		div{
+			.circlpeq{
+				width: 30px;
+				height: 30px;
+				background-color: $verde;
+				@include border-radius(15px);
+				color: $blanco;
+			    display: inline-block;
+			    line-height: 30px;
+			    text-align: center;
+			}
+		}
+	}
+
+	figure{
+		.wrapDibuPerfil{
+			width: 60%;
+			padding: 40px 0;
+			display: inline-block;
+			background: $turquesa;
+			text-align: center;
+			margin: 0 auto;
+    		display: block;
+    		img{
+    			margin-left: -20%;
+    		}
+		}
+	}
+}
+
+// //	PERFIL DEL GRADUADO //
+
+section.requisitosMatricula{
+	table{
+		tr{
+			td:nth-child(odd){
+				background: $naranja;
+			}
+			td:nth-child(even){
+				background: $naranja2;
+			}
+		}
+		p{
+			color: $blanco;
+		}
+	}
+}
+section.costosMatricula{
+	table{
+		tr{
+			td:nth-child(odd){
+				background: $verde;
+			}
+			td:nth-child(even){
+				background: $verde2;
+			}
+		}
+		p{
+			color: $blanco;
+		}
+	}
+}
+section.pagos-requisitos{
+	table{
+		tr{
+			td:nth-child(odd){
+				background: $azulOscuro;
+			}
+			td:nth-child(even){
+				background: $azul;
+			}
+		}
+		p{
+			color: $blanco;
+		}
+	}
+}
+
+
+// //	QUIENES SOMOS EN SECUNDARIA //
+section.quienesSomosSecunadaria{
+	margin: 40px 0;
+	.col-md-4 {
+		div{
+			p{
+				text-align:justify;
+			}
+		}
+	}
+	article{
+		.descripcionDocentes{
+			aside{
+				p{
+					margin-bottom: 26px;
+					line-height: 23px;
+					text-align: justify;
+				.circle {
+					@include border-radius(17px);
+					color: $blanco;
+					font-size: 1.1em;
+					background: $azul;
+					text-align: center;
+					padding: 8px 12px;
+				}
+					span{
+						text-align: justify;
+					}
+				}
+			}
+		}
+		.wrapperItems{
+			@include flexo2;
+			@include flex-wrap(wrap);
+			.item{
+				width: 19%;
+				padding: 0 24px;
+				margin-bottom: 18px;
+				figure{
+					img{
+						width: 90%;
+						margin: 0 auto 14px auto;
+					}
+				}
+				p{
+					text-align: center;
+					font-size: 0.85em;
+				}
+			}
+		}
+	}
+}
+
+// //	DESCARGABLES TAREAS TEMARIOS PRACTICAS //
+
+.node-documentos-estudiantes {
+	padding: 60px 0;
+	.content {
+		@include flexo2;
+		@include flex-wrap(wrap);
+		.field-type-file{
+			text-align: center;
+			padding: 20px;
+			margin: 15px;
+			cursor: pointer;
+			border: solid 1px $turquesa;
+			@include transition(300ms);
+			.field-label{
+
+			}
+			.field-items{
+				.field-item{
+					span.file{
+						img, a{
+							display: block;
+							margin: 0 auto;
+							padding: 10px 0;
+						}
+					}
+				}
+			}
+			&:hover{
+				background: $turquesa;
+				color: $blanco;
+				a{
+					color: $blanco;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+// //	LINKS PADRES  //
+
+.wrapLinksPadres{
+	@include flexo2;
+	@include flex-wrap(wrap);
+	margin: 50px 0;
+	aside{
+		background: $turquesa;
+		width: 18%;
+		min-width: 280px;
+		margin: 15px;
+		padding: 20px;
+		@include border-radius(4px);
+		text-align:center;
+		cursor: pointer;
+		a{
+			color: $blanco;
+			text-decoration: none;
+			white-space: nowrap;
+			@include border-radius(3px);
+		}
+		&:hover{
+			background: saturate($turquesa, 30);
+			a{
+				
+			}
+		}
+	}
+}
+
+// // 
+.node-documentos-padres{
+	.field-items {
+	@include flexo2;
+		margin: 50px 0;
+		.field-item{
+			background: $turquesa;
+			width: 18%;
+			min-width: 280px;
+			margin: 15px;
+			padding: 20px;
+			@include border-radius(4px);
+			text-align:center;
+			cursor: pointer;
+		span.file{
+			img, a{
+				display: block;
+			}
+				img{
+					margin: 0 auto;
+					padding: 12px;
+				}
+				a{
+					color: $blanco;
+				}
+			}
+		}
+	}
+}
+
+
+
+// //	DIRECTORIO de PROFES para PADRES  //
+
+.view-directorio, .view-directorio-primaria, .view-directorio-preescolar {
+	.view-content{
+		@include flexo2;
+		@include flex-wrap(wrap);
+		margin-top: 30px;
+		.views-row {
+			width: 18%;
+			min-width: 280px;
+			margin-bottom: 18px;
+			padding: 0 16px;
+			img{
+				width: 100%;
+				max-width: 150px;
+				height: auto;
+				margin-bottom: 18px;
+				&:hover{
+					-webkit-filter: grayscale(0.8);
+					filter: grayscale(0.8);
+				}
+			}
+			&:hover{
+				a{
+					color: $verde;
+				}
+			}
+		}
+	}
+}
+
+// //  descipción de profesor(a)  //
+
+.node-profesores{
+	margin-top: 40px;
+	.row{
+		.col-sm-6:nth-of-type(1){
+			.field-item{
+				text-align: center;
+			}
+		}
+		.col-sm-6:nth-of-type(2){
+			.field{
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.field-name-field-foto-profesor{
+		img{
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+			max-width: 300px;
+		}
+	}
+}
+
+// //	ENTRADAS DE BLOG Y COMETARIOS  //
+
+.node-blog{
+	margin-top: 40px;
+	.field-name-field-imagen-blog{
+		.field-items{
+			.field-item{
+				img{
+					@include fullWidth;
+				}
+			}
+		}
+	}
+	.field-name-body{
+		margin-bottom: 20px;
+	}
+}
+
+// //	USUARIO  //
+
+.page-user{
+	#content-wrapper{
+		width: 70%;
+		margin-top: 30px;
+		background: $turquesa;
+		padding: 20px;
+		margin: 0 auto;
+		input{
+			display: block;
+			clear: both;
+		}
+		label{
+			color: $blanco;
+			padding: 12px 0;
+		}
+	}
+}
+
+
+// // Información de Matrícula
+.page-blog{
+	.action-links{
+		margin-top: 30px;
+		width: 270px;
+		text-align: center;
+		a{
+			padding: 14px;
+			background: $turquesa;
+			color: $blanco;
+			&:hover{
+				background: saturate($turquesa, 30);
+			}
+		}
+	}
+}
+
+
+.blogwrapper{
+	padding: 40px 0;
+	display: block;
+	clear: both;
+	.views-field-field-imagen-blog, .views-field-title, .views-field-body {
+		width: 47%;
+		float: left;
+		padding: 16px;
+	}
+	.views-field-field-imagen-blog{
+		img{
+			@include fullWidth;
+			&:hover{
+				-webkit-filter: grayscale(0.8);
+				filter: grayscale(0.8);
+			}
+		}
+	}
+	.views-field-title{
+		font-size: 1.3em;
+		text-transform: uppercase;
+		white-space: wrap;
+	}
+	.views-field-body{
+		text-align: justify;
+	}
+}
+
+// Servicios
+
+.wrapServiciosbtn{
+	@include flexo3;
+	background: $turquesa;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	margin: 12px 0;
+	border: solid 4px $turquesa;
+	box-sizing: border-box;
+	@include transition(300);
+	
+	.btnServicios{
+		background: transparent;
+		border: none;
+		display: inline-block;
+		vertical-align: middle;
+		color: $blanco;
+	}
+	&:hover{
+		background: $blanco;
+		.btnServicios{
+			color: $turquesa;
+		}
+	}
+}
+
+// todos los tipos de contenido de subir documentos
+
+.node-type-documentos-padres{
+	.field-items{
+		@include flexo2;
+		@include flex-wrap(wrap);
+		.field-item{
+			min-width: 280px;
+		}
+	}
+}
+
+// Testimonios
+
+.node-type-testimonios{
+	article.node-testimonios{
+		width: 55%;
+		padding: 30px;
+		margin: 30px auto;
+		p{
+			margin: 12px 0;
+		}
+	}
+}
+
+.testimoniosBubbles{
+	@include flexo3;
+	@include justify-content(space-around);
+	@include flex-wrap(wrap);
+	margin: 30px 0;
+	article{
+		width: 21%;
+		min-width: 241px;
+		height: 200px;
+		margin: 12px;
+		padding: 20px;
+		background: $gris;
+		position: relative;
+		@include border-radius(20px);
+		p{
+			strong, span, a{
+				display: block;
+				margin: 5px 0;
+				text-align: left;
+			}
+			span{
+				font-size: 0.7em;
+				font-style: italic;
+			}
+			a{
+				text-align: center;
+				font-size: 11px;
+				margin-top: 12px;
+				@extend .boton;
+				max-width: 100px;
+			}
+		}
+		&:before{
+			content: ' ';
+			position: absolute;
+			transform: rotateZ(90deg);
+			width: 20px;
+			height: 20px;
+			bottom: auto;
+			border: 22px solid;
+			border-color: $gris transparent transparent transparent;
+			}
+		&:nth-child(1):before{
+		    left: -42px;
+		    right: auto;
+		    top: 50px;
+			transform: rotateZ(90deg);
+		}
+		&:nth-child(2):before{
+			left: auto;
+		    right: -44px;
+		    top: 100px;
+			transform: rotateZ(270deg);
+		}
+		&:nth-child(3):before{
+			left: 60%;
+		    right: auto;
+		    top: 100%;
+			transform: rotateZ(0deg);
+		}
+		&:nth-child(4):before{
+		    left: 40px;
+		    right: auto;
+		    top: -44px;
+			transform: rotateZ(180deg);
+		}
+	}
+}
+
+
+
+

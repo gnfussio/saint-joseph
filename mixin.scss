@@ -1,0 +1,68 @@
+@import "compass/reset";
+@import "compass/css3";
+ // variables
+
+ $naranja: #faad3f;
+ $naranja2: #F39707;
+ $verde: #97c13c;
+ $verde2: #32A736;
+ $azul: #005dac;
+ $azulOscuro: #044891;
+ $gris: #bdc0c2;
+ $grisOscuro: #333;
+ $grisClaro: #efefef;
+ $blanco: #FFF;
+ $negro: #000;
+ $fondo: #f9fafa;
+ $rojo: tomato;
+ $turquesa: #43B7AC;
+
+ $variable: random(255);
+
+ // tipos
+
+ $tipo: 'Montserrat', sans-serif;
+
+ // transitions
+
+ @mixin transition($val){
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin base-links($val1, $val2){
+	color: $val1;
+	text-transform: $val2;
+	text-decoration: none;
+}
+
+@mixin fullWidth{
+	width: 100%;
+	height: auto;
+}
+
+@mixin wyh($val){
+	width: $val;
+	height: $val;
+}
+
+// requiere compass/css3
+@mixin flexo{
+	@include display-flex(flex);
+	@include align-items(flex-end);
+	@include justify-content(center);
+}
+
+@mixin flexo2{
+	@include display-flex(flex);
+	@include align-items(start);
+	@include justify-content(center);
+}
+
+@mixin flexo3{
+	@include display-flex(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}

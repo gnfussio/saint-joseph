@@ -1,0 +1,119 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import "compass/reset";
+@import "compass/typography";
+@import "mixin.scss";
+
+/// menu ingresar y salir
+
+#top{
+	#top-inside{
+			#block-menu-menu-usuarios-del-sitio-ingresar, #block-menu-menu-padres-estudiantes{
+				background: $azul;
+			h2{ display: none; }
+			ul{
+				li{
+					@include inline-list;
+					a{
+						@include base-links($blanco, uppercase);
+						font-size: 0.8em;
+						@include transition(300ms);
+						&:hover{
+							color: $verde;
+						}
+					}
+				}
+				li:nth-of-type(2){
+					
+				}
+			}
+		}
+	}
+}
+
+#block-menu-menu-padres-estudiantes{
+	ul{
+		li{
+			a{
+				padding: 0 12px;
+			}
+		}
+		li.first{
+			a{
+				border-right: solid 1px $blanco;
+			}
+		}
+	}
+}
+
+
+#block-menu-menu-top-menu{
+	h2{
+		display: none;
+	}
+	
+	ul.menu{
+		    text-align: center;
+		    padding-top: 14px;
+		    margin-top: 4.2%;
+		li{
+			@include inline-list;
+			position: relative;
+			> a{
+				@include base-links($negro, uppercase);
+				padding: 10px 7px;
+				font-size: 0.9em;
+				@include transition(500ms);
+				&:hover{
+					background: $azul;
+					color: $blanco;
+				}
+			}
+			ul.menu{
+				display: none;
+				position: absolute;
+				z-index:9; // use el z-index que necesite
+				left: 0;
+				top: 136%;
+				padding: 0px;
+				max-width: 280px!important;
+				margin-top: 0px;
+				background: $gris;
+				li{
+					display: block;
+					a{
+						width: 100%;
+						white-space: nowrap;
+						color: $blanco;
+						background: transparent;
+						padding: 8px;
+						display: block;
+						font-size: 0.7em;
+						@include transition(300ms);
+						&:hover {
+							color: $blanco;
+						}
+					}
+					&:hover{
+						a{
+							&:hover{
+								background: $verde;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// esconde las rayitas
+.wrapMenuToggle{
+	display:none;
+
+	.menurayas, .menuequis{
+		cursor: pointer;
+	}
+	.menuequis{
+		display: none;
+	}
+}

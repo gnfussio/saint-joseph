@@ -1,0 +1,63 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "mixin.scss";
+
+.page-node-54{
+	#main-content{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eff8fc+1,a7cfdf+19,23538a+100 */
+background: #eff8fc; /* Old browsers */
+background: -moz-linear-gradient(top,  #eff8fc 1%, #a7cfdf 19%, #23538a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #eff8fc 1%,#a7cfdf 19%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #eff8fc 1%,#a7cfdf 19%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff8fc', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+	
+	}
+}
+
+.webform-client-form-54 {
+	width: 60%;
+	margin: 0 auto;
+	background: $blanco;
+	padding: 20px;
+	margin-bottom: 30px;
+
+	.form-item > label{
+		font-weight: bold;
+		font-size: 0.8em;
+	}
+	> .form-item{
+		margin: 10px 0 40px 0;
+	}
+	.webform-component-checkboxes{
+		.form-type-checkbox{
+			display: inline-block;
+		}
+		.form-type-checkbox{
+			margin-right: 20px;
+			label{
+				color: #999;
+			}
+		}
+	}
+}
+
+.webform-client-form-167{
+
+}
+
+.form-actions{
+	width: 100%;
+	text-align: center;
+	input{
+		background: $azul;
+		padding: 12px 24px;
+		border: none;
+		color: $blanco;
+		&:hover{
+			opacity: 0.8;
+		}
+		&:focus{
+			background: $azulOscuro;
+		}
+	}
+}

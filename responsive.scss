@@ -1,0 +1,495 @@
+
+@import "compass/css3";
+@import "mixin.scss";
+
+@media only screen and (min-width: 1201px) {
+	// hasta menos de 1201px el menu se despliega a todo el ancho 
+	#block-menu-menu-top-menu{
+		display: block;
+	}
+}
+@media only screen and (min-width: 993px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+	// hasta un máximo de 1200px el la letra se reduce
+	#block-menu-menu-top-menu{
+		ul.menu{
+			li{
+				a{
+					font-size: 0.7em!important;
+					padding: 10px 3px!important;
+				}
+			}
+		}
+	}
+	.ofertaEducativaWrapper{
+		.cuadro{
+			.icono{
+				.tituloOferta{
+					font-size: 1.4em!important;
+				}
+			}
+		}
+	}
+	section.misionvision{
+		.subtitularesAzul{
+			padding-top: 20px;
+		}
+		.textoSobreFoto{
+			top: 55%!important;
+			font-size: 1em!important;
+		}
+	}
+	.infoMatricula{
+		.textoSobreFoto{
+			font-size: 1em!important;
+			top: 25%!important;
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.node-type-testimonios{
+		article.node-testimonios{
+			width: 85%!important;
+		}
+	}
+	.page-user{
+		#content-wrapper{
+			width: 100%!important;
+		}
+	}
+	.titulares{
+		h1{
+			font-size: 1.5em!important;
+			text-align: center;
+		}
+	}
+
+	.subtitularesAzul{
+		font-size: 1.3em!important;
+	}
+	.logo{
+		text-align: center;
+	}
+
+
+	.region-navigation {
+		display: block!important;
+	}
+	// hace que aparezca la rayas del menu toggle, pero no la equis...
+	.wrapMenuToggle{
+		display:block!important;
+		.menurayas{
+			
+		}
+	}
+
+	// menu mobil
+	// hace que el logo se centre el el ancho de la ventana
+	#block-block-1{
+		.logo{
+			width: 100%!important;
+			background-position-x: 50%!important;
+			@include background(12%!important);
+			background-repeat: no-repeat;
+		}
+	}
+	// esconde el menu
+	#block-menu-menu-top-menu{
+		display: none;
+		width: 100%!important;
+	}
+	
+	// ************  menu ****** -- //
+	#block-menu-menu-top-menu{
+		display: none;
+		
+		// hace que el menu se despliegue a todo el ancho
+		ul.menu{
+			padding: 10!important;
+			.expanded{
+				> a:before{
+					content: "> ";
+				}
+			}
+			li{
+				display: block!important;
+				    background: $azul;
+				    border-bottom: dotted 1px white;
+				    padding: 9px!important;
+				    @include transition(200ms);
+				> a{
+					font-size: 1em!important;
+					color: $blanco!important;
+					
+					&:hover{
+						color: $verde!important;
+						background: transparent!important;
+					}
+				}
+				&:hover, &:focus{
+					background: $azul!important;
+				}
+				ul{
+					position: inherit!important;
+					margin: 0 auto!important;
+					li{
+						padding: 0!important;
+						border: none!important;
+						a{
+							font-size: 0.7em!important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.topWrapper{
+		#block-block-16{
+			float: left!important;
+			margin-left: 14px;
+			svg{
+				fill: $blanco!important;
+			}
+		}
+	}
+	.region-navigation {
+		#block-block-3 {
+				width: 100%!important;
+			}
+		}
+
+	//preescolar
+	.contenedor_cuadros_preescolar{
+		 .cuadro_interno_preescolar{
+	 		width:44%!important;
+	 	}
+	 }
+	.textoSobreFoto{
+		top: 65%!important;
+		font-size: 0.8em!important;
+	}
+
+	section.misionvision{
+		.textoSobreFoto{
+		    position: inherit!important;
+		    width: 90%!important;
+		    font-size: 1em!important;
+		    line-height: 1em!important;
+		    left: inherit!important;
+		    text-align:center;
+	        display: block;
+		    margin: 0 auto;
+
+		}
+	}
+	section.princiosDeCalidad{
+		.textoSobreFoto{
+			top: 45%!important;
+		}
+	}
+	.infoMatricula{
+		.textoSobreFoto{
+			top:15%!important;
+			width: 90%!important;
+			font-size: 0.8em!important;
+		}
+	}	
+	.textoSobreFoto{
+		padding: 12px!important;
+		position: inherit!important;
+		width: 100%!important;
+	}
+
+	section.primaria{
+		.items{
+			ul{
+				li{
+					width: 290px!important;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.topWrapper {
+		#top-inside{
+			.region{
+				display: block!important;
+			}
+		}
+
+		#block-search-form, 
+			#block-block-16, 
+			#block-block-1, 
+			#block-menu-menu-padres-estudiantes, 
+			#block-menu-menu-usuarios-del-sitio-ingresar {
+				margin: 0 20px;
+		}
+	}
+
+	//Redes sociales
+	#block-block-1{
+		width: 100% !important;
+		float: left;
+		text-align: center!important;
+		padding: 20px 0 0 0!important;
+		margin: 0 0!important;
+	}
+
+	//menu mobil
+	#block-block-16{
+		float:left;
+		width: 10%!important;
+	}
+
+	//buscador
+	#block-search-form{
+		float:left;
+		width: 60%!important;
+		.container-inline{
+			text-align: center;
+		}
+		#edit-actions--2{
+			float: right;
+			width: 10px;
+		}
+	}
+
+	// menu de padres y estudiantes
+	#block-menu-menu-padres-estudiantes{
+		float:left;
+		width: 49%!important;
+	}
+
+	// ingresar / salir
+	#block-menu-menu-usuarios-del-sitio-ingresar{
+		float:left;
+		width: 25%!important;
+	}
+
+	// vuelve a hacer grande texto
+	#block-menu-menu-top-menu{
+		ul.menu{
+			li{
+				display: block!important;
+				a{
+					font-size: 1em!important;
+				}
+			}
+		}
+	}
+	.ofertaEducativaWrapper{
+		.cuadro{
+			width: 100%!important;
+			height: 75px!important;
+			.icono{
+				img, tituloOferta{
+					float: left;
+				}
+				img{
+					margin-right: 14px;
+				}
+				.tituloOferta{
+					font-size: 1em!important;
+				}
+			}
+		}
+	}
+	.bannerGigante{
+		.wrapTextosBanner{
+			span{
+				font-size: 0.9em!important;
+			}
+			strong{
+				font-size: 1.5em!important;
+			}
+		}
+	}
+	.wraplogosAlianzas {
+		.logoAlinzas {
+			height: 90px!important;
+			img{
+				width: 100%!important;
+			}
+		}
+	}
+	.webform-client-form-54 {
+		width: 95%!important;
+	}
+
+	.wrapperValores{
+		display: block!important;
+		.wraperValor{
+			display: block!important;
+			width:90%!important;
+			margin: 0 auto!important;
+		}
+	}
+	.infoMatricula{
+
+	}
+
+	section.preescolar{
+		.wrapItemsPrescolar{
+			ul{
+				display: block!important;
+				li{
+					width: 100%!important;
+					figure, p{
+						display: inline-block!important;
+						vertical-align: top;
+					}
+					figure{
+						width: 24%;
+						img{
+							margin-right: 10px;
+						}
+					}
+					p{
+						width: 74%;
+						margin-top: 25px;
+						font-size: 0.7em!important;
+					}
+				}
+			}
+		}
+	}
+	section.primaria{
+		ul.items{
+			li{
+				width: 100%!important;
+				figure, p{
+					display: inline-block!important;
+					vertical-align: top;
+				}
+				figure{
+					width: 24%!important;
+					img{
+						margin-right: 10px;
+					}
+				}
+				p{
+					width: 74%!important;
+					margin-top: 4px;
+					font-size: 0.7em!important;
+				}
+			}
+		}
+	}
+
+	.wrapperItems{
+		display: block!important;
+		.item{
+			width: 100%!important;
+			display: block;
+    		clear: both;
+			figure{
+				width: 24%!important;
+				float: left;
+				img{
+				}
+			}
+			p{
+				width: 74%;
+				float: left;
+				text-align: left!important;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+	.node-type-testimonios{
+		article.node-testimonios{
+			width: 100%!important;
+		}
+	}
+	.wrapFundadoras{
+		margin-top: 20px;
+	}
+	// centra el logo en celular. EN ESTE CASO EL LOGO ESTA EN UN BACKGROUND
+	#block-block-1{
+		.logo{
+			@include background(22%!important);
+		}
+	}
+	//preescolar
+	.contenedor_cuadros_preescolar{
+		 .cuadro_interno_preescolar{
+	 		width:90%!important;
+	 	}
+	 }
+
+	 .view-taxonomy-term {
+		.view-content{
+			.views-row{
+				width: 95%!important;
+			}
+		}
+	 }
+	.contenedor_cuadros_primaria {
+		 .itemHorario{
+		 	 width:95%!important;
+		 	 margin-bottom: 20px;
+		 	 display: inline-block;
+		 	 min-width: inherit!important;
+		 	}
+		}
+	.wrapperDescargables{
+		h2{
+			width: 90%!important;
+		}
+		.wrapperItem {
+			width: 100%!important;
+			a{
+				padding: 6px 8px;
+				font-size: 0.8em!important;
+				font-weight: lighter!important;
+				background: $verde;
+				color: $blanco;
+				@include border-radius(4px);
+			}
+		}
+	}
+	section.trayectoria{
+		article:nth-child(1) ~ article{
+			figure{
+				height:300px;
+				overflow: hidden;
+				img{
+					width: 500px!important;
+					margin-left: -50%;
+				}
+			}
+		}
+	}
+	.infoMatricula{
+		.wrapDibus{
+			.divRedondo{
+				width: 90px!important;
+				height: 90px!important;
+			}
+			img{
+				width: 80px!important;
+				height: auto!important;
+			}
+		}
+		.iconText {
+			padding: 12px 0!important;
+			p{
+				font-size: 0.7em!important;
+			}
+			img{
+				width: 60px!important;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,26 @@
+@import "mixin.scss";
+
+#footer{
+	padding: 40px 0px;
+	background: $grisOscuro;
+
+	.block{
+		h3{
+			color: $blanco;
+			padding: 20px 0px;
+			font-size: 1em;
+			text-transform: uppercase;
+		}
+		ul{
+			li{
+				padding: 5px 0px;
+				color: $blanco;
+				font-size: 0.7em;
+				a{
+					color: $grisClaro;
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}

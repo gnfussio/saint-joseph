@@ -1,0 +1,118 @@
+@import "mixin.scss";
+@import "compass/css3";
+
+#wrapperCategoriasToggl{
+margin-top: 30px;
+	// menu
+	.wrapperSidemenu{
+		border: solid 1px $grisClaro;
+		.wraperlinksToggleCateg{
+			margin-top: 30px;
+			ul{
+				li{
+					border-bottom: solid 1px $grisClaro;
+					position: relative;
+					text-align: center;
+					.linkToggleCat {
+						color: $azul;
+						cursor: pointer;
+						font-size: 0.90em;
+						letter-spacing: 0.15em;
+						padding: 20px 0 20px 10px;
+						margin-left: 15px;
+						@include transition(300ms);
+						background:#4f9ed6;
+						&:hover{
+							color: $blanco;
+
+						}
+					}
+					.animalinea{
+						width: 2px;
+						position: absolute;
+						background: $azul;
+						display: inline-block;
+						height: 0%;
+						@include transition(300ms);
+					}
+					&:hover{
+						.animalinea{
+							height: 56px;
+						}
+					}
+					figure{
+						position: absolute;
+						right: 30px;
+						top: 15px;
+						img{
+							display: none;
+							widows: 20px;
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.region-togglezone{
+		.block-views{
+			display: none;
+			margin: 20px 0;
+			h2{
+				color: $azul;
+				text-transform: uppercase;
+				font-size: 1.5em;
+				padding: 20px 0;
+			}
+		}
+	}
+
+	// vista general
+
+	.view{
+		.view-content{
+				@include display-flex(flex);
+				@include justify-content(space-around);
+				@include flex-wrap(wrap);
+			.views-row {
+				width: 30%;
+				margin: 12px;
+				.views-field{
+
+				}
+				.views-field-field-foto-enlaces{
+					.field-content{
+						a{
+							img{
+								@include fullWidth;
+							}
+						}
+					}
+				}
+				.views-field-title{
+					text-align: center;
+					span{
+						a{
+							color: $grisOscuro;
+							font-size: 0.8em;
+						}
+					}
+				}
+			}
+		}
+	}
+	#block-views-categorias-block{
+		h2{display: none}
+	}
+}
+
+.esnuevo{
+	position: absolute;
+	z-index: 2;
+	background: $rojo;
+	color: $blanco;
+	padding: 7px 12px;
+}
+
