@@ -19,8 +19,7 @@ margin-top: 30px;
 						font-size: 0.90em;
 						letter-spacing: 0.15em;
 						padding: 20px 0 20px 10px;
-						margin-left: 15px;
-						max-height:54px;
+						/*margin-left: 15px;*/
 						@include transition(300ms);
 						background:#4f9ed6;
 						&:hover{
@@ -34,11 +33,12 @@ margin-top: 30px;
 						background: $azul;
 						display: inline-block;
 						height: 0%;
+						left: 0;
 						@include transition(300ms);
 					}
 					&:hover{
 						.animalinea{
-							height: 56px;
+							height: 68px;
 						}
 					}
 					figure{
