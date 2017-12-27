@@ -20,6 +20,7 @@ margin-top: 30px;
 						letter-spacing: 0.15em;
 						padding: 20px 0 20px 10px;
 						margin-left: 15px;
+						max-height:54px;
 						@include transition(300ms);
 						background:#4f9ed6;
 						&:hover{
