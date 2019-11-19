@@ -1,0 +1,88 @@
+@import "compass/css3";
+@import "mixin.scss";
+
+#block-views-categorias-block{
+  margin-top: 20px;
+  h2{
+    display: none;
+  }
+}
+
+.view-categorias{
+  .view-content{
+      @include display-flex(flex);
+      @include justify-content(space-around);
+      @include flex-wrap(wrap);
+    .views-row{
+      width: 30%;
+      margin: 12px;
+      .views-field-title{
+        text-align: center;
+        span{
+          a{
+            display: block;
+            text-align: center;
+            color: $grisOscuro;
+            font-size: 1.1em;
+            padding: 8px 0;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .views-field-field-foto-enlaces{
+        overflow: hidden;
+        a{
+          display: block;
+        }
+        img{
+          width: 100%;
+          height: auto;
+          @include transition(300ms);
+        }
+      }
+      &:hover{
+        .views-field-field-foto-enlaces{
+          img{
+            @include transform(scale(1.2));
+          }
+        }
+        .views-field-title{
+          background: $verde;
+          a{
+            color: $blanco;
+          }
+        }
+      }
+    }
+  }
+}
+
+.view-taxonomy-term {
+  margin-top: 30px;
+	.view-content{
+		@include flexo3;
+		@include flex-wrap(wrap);
+		.views-row{
+		    width: 30%;
+		    margin: 0 12px 14px 12px;
+		    text-align: center;
+		    padding: 30px;
+		    border-radius: 3px;
+		    background: $grisClaro;
+		    @include transition(300ms);
+    		img{
+				margin-top:10px;
+    		}
+    		.views-field-title{
+    			span{
+    				a{
+    					font-size: 0.9em;
+
+    				}
+    			}
+    		}
+		}
+	}
+}
